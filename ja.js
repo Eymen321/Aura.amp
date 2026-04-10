@@ -1,3 +1,23 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB0qXdhtNSMNaWXuUFS2ZN-Wu1c4BZ2K6I",
+  authDomain: "auraamp-87601.firebaseapp.com",
+  projectId: "auraamp-87601",
+  storageBucket: "auraamp-87601.firebasestorage.app",
+  messagingSenderId: "212946100680",
+  appId: "1:212946100680:web:e0e99deb291c26031ee0fd",
+  measurementId: "G-0X0Z5QC7WB"
+};
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore, collection, addDoc, query, orderBy, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
